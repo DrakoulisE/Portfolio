@@ -1,0 +1,164 @@
+#bannerBox{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgba(0, 0, 0, 0.7 ), rgba(0, 30, 40, 0.3));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: relative;
+    border-bottom: 1px solid rgb(59, 59, 59)
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: 0%;
+}
+
+#title{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(250, 250, 250);
+    height: auto;
+    width: auto;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+#title h1{
+    font-size: 2.8em;
+    font-weight: 700;
+}
+#title h2{
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+#title h2 b{
+    color: rgb(55, 180, 255);
+}
+
+#buttons{
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons button{
+    background-color: rgba(110, 110, 110, 0.150);
+    color: rgb(250, 250, 250);
+    width: 150px;
+    height: 60px;
+    margin: 20px;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0px;
+    border:1px solid rgba(255, 255, 255, 0.050);
+    box-shadow: 0px 0px 30px  rgba(0, 0, 0, 0.37);
+}
+#buttons button:hover{
+    cursor: pointer;
+    background: none;
+    border: 1px solid rgba(90, 90, 90, 0.600);
+    background-color: rgba(0, 0, 0, 0.863);
+    box-shadow: 0px 5px 0px rgb(55, 180, 255);
+    transition: 0.2s;
+}
+#buttons button:active{
+    background-color: rgb(71, 71, 71);
+    box-shadow: 0px 5px 0px rgb(206, 206, 206);
+    color: rgb(0, 0, 0);
+    transition: 0s;
+}
+
+#logo{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0%;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+#logo > img{
+    width: 700px;
+    height: auto;
+    position: relative;
+}
+
+@media (max-height: 790px){
+    #bannerBox{
+        height: 750px;
+    }
+    #content{
+        height: 750px;
+    }
+    #Logo{
+        height: 750px;
+    }
+}
+
+@media (max-width: 1286px) {
+    #title h1{
+        font-size: 2.5em;
+        transition: 0.2s;
+    }
+    #title h2{
+        font-size: 1.7em;
+        margin-bottom: 20px;
+        transition: 0.2s;
+    }
+    #logo > img{
+        width: auto;
+        height: 40%;
+    }
+  }
+
+@media (max-width: 1200px) {
+    #bannerBox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content, #logo{
+        position: static;
+        width: 100%;
+        height: 50%;
+    }
+    #content{
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 2.5fr 1fr 1fr 1fr;
+    }
+
+
+    #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo > img{
+        width: auto;
+        height: 100%;
+    }
+    
+  }
+
+  @media (max-width: 800px) {
+    #title h1{
+        font-size: 2em;
+    }
+    #logo > img{
+        width: auto;
+        height: 90%;
+        transition: 0.2s;
+    }
+  }
