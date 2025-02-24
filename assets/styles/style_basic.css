@@ -6,6 +6,7 @@ html{
 }
 
 body{
+    width: 100vw;
     margin: 0px;
     background-image: url(../images/bodyBackground.jpg);
     background-repeat: no-repeat;
