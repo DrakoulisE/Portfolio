@@ -5,17 +5,18 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     position: relative;
-    border-bottom: 1px solid rgb(59, 59, 59)
+    border-bottom: 1px solid rgb(59, 59, 59);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #content{
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 50%;
     height: 100vh;
-    position: absolute;
-    left: 0%;
 }
 
 #title{
@@ -24,10 +25,6 @@
     align-items: center;
     flex-direction: column;
     color: rgb(250, 250, 250);
-    height: auto;
-    width: auto;
-    grid-column: 2;
-    grid-row: 2;
     text-align: center;
 }
 #title h1{
@@ -83,83 +80,37 @@
 #logo{
     width: 50%;
     height: 100vh;
-    position: absolute;
-    right: 0%;
     display: flex;
     justify-content:end;
     align-items: center;
-    overflow: hidden;
 }
 #logo > img{
     width: 700px;
-    height: auto;
-    position: relative;
 }
 
-@media (max-height: 790px){
+@media (max-width: 767px){
     #bannerBox{
-        height: 750px;
-    }
-    #content{
-        height: 750px;
-    }
-    #Logo{
-        height: 750px;
-    }
-}
-
-@media (max-width: 1286px) {
-    #title h1{
-        font-size: 2.5em;
-        transition: 0.2s;
-    }
-    #title h2{
-        font-size: 1.7em;
-        margin-bottom: 20px;
-        transition: 0.2s;
-    }
-    #logo > img{
-        width: auto;
-        height: 40%;
-    }
-  }
-
-@media (max-width: 1200px) {
-    #bannerBox{
-        display: flex;
         flex-direction: column;
     }
 
-    #content, #logo{
-        position: static;
-        width: 100%;
-        height: 50%;
-    }
     #content{
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-rows: 2.5fr 1fr 1fr 1fr;
+        width: 100%;
+        height: 45vh;
+        justify-content: end;
     }
-
+    #title{
+        font-size: 0.7em;
+    }
 
     #logo{
+        width: 100%;
+        height: 55vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #logo > img{
-        width: auto;
-        height: 100%;
+        width: 650px;
     }
-    
-  }
 
-  @media (max-width: 800px) {
-    #title h1{
-        font-size: 2em;
-    }
-    #logo > img{
-        width: auto;
-        height: 90%;
-        transition: 0.2s;
-    }
-  }
+}

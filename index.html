@@ -2,6 +2,7 @@
 
 <html lang="en">
     <head>
+        <meta charset="UTF-8">  
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portofolio v3</title>
         <link rel="stylesheet" href="./assets/styles/style_basic.css">
@@ -11,13 +12,15 @@
 
     <body>
         <header>
-            <div id="navBar">
+            <nav id="navBar">
                 <button>About</button>
                 <button>Projects</button>
                 <button>Contact</button>
-            </div>
+            </nav>
+            <button id="homeButton">home</button>
+            <button id="barMenu">=</button>
         </header>
-
+        
         <div id="bannerBox">
             <div id="content">
                 <div id="title">
@@ -34,54 +37,37 @@
             </div>
         </div>
 
-        <div class="container" id="aboutContainer">
-            <div id="aboutContent">
-                <h2>About me</h2>
-                <div>
-                    <div id="aboutImage">
-                        TBD
-                    </div>
-                    <div id="aboutTxtBox">
-                        <p class="aboutTxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi magnam ipsa explicabo optio ducimus blanditiis similique perspiciatis repellendus aliquam, aperiam, pariatur temporibus hic recusandae reiciendis reprehenderit nemo architecto aspernatur? Voluptas?</p>
-                        <p class="aboutTxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi magnam ipsa explicabo optio ducimus blanditiis similique perspiciatis repellendus aliquam, aperiam, pariatur temporibus hic recusandae reiciendis reprehenderit nemo architecto aspernatur? Voluptas?</p>
-                        <p class="aboutTxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi magnam ipsa explicabo optio ducimus blanditiis similique perspiciatis repellendus aliquam, aperiam, pariatur temporibus hic recusandae reiciendis reprehenderit nemo architecto aspernatur? Voluptas?</p>
-                        <p class="aboutTxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi magnam ipsa explicabo optio ducimus blanditiis similique perspiciatis repellendus aliquam, aperiam, pariatur temporibus hic recusandae reiciendis reprehenderit nemo architecto aspernatur? Voluptas?</p>
-                    </div>
+        <div class="about container">
+            <h2>About</h2>
+            <div class="aboutContentBox">
+                <div id="aboutImage">
 
+                </div>
+                <div id = "about_textbox">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora optio debitis impedit sunt doloremque quidem, voluptatem soluta ex. Doloribus, vel! Repellat modi, ipsam magnam autem soluta vel excepturi aspernatur?</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora optio debitis impedit sunt doloremque quidem, voluptatem soluta ex. Doloribus, vel! Repellat modi, ipsam magnam autem soluta vel excepturi aspernatur?</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora optio debitis impedit sunt doloremque quidem, voluptatem soluta ex. Doloribus, vel! Repellat modi, ipsam magnam autem soluta vel excepturi aspernatur?</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora optio debitis impedit sunt doloremque quidem, voluptatem soluta ex. Doloribus, vel! Repellat modi, ipsam magnam autem soluta vel excepturi aspernatur?</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora optio debitis impedit sunt doloremque quidem, voluptatem soluta ex. Doloribus, vel! Repellat modi, ipsam magnam autem soluta vel excepturi aspernatur?</p>
                 </div>
             </div>
         </div>
-
-        <div class="container" id="projectsContainer">
-            <div id="projectBox">
-                <h2>Projects</h2>
-                <div>
-                    <button class="project" id="project1">
-                        <div>
-                            
-                        </div>
-                        <p>Project1</p>
-                    </button>
-                    <button class="project" id="project2">
-                        <div>
-                            
-                        </div>
-                        <p>Project2</p>
-                    </button>
-                    <button class="project" id="project3">
-                        <div>
-                            
-                        </div>
-                        <p>Project3</p>
-                    </button>
-                </div>
-            </div>
+        
+        <div class="project container">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <button>Project1</button>
+                </li>
+                <li>
+                    <button>Project2</button>
+                </li>
+                <li>
+                    <button>Project3</button>
+                </li>
+            </ul>
         </div>
-
-        <div class="container" id="contactContainer">
-
-        </div>
-
+            
         <footer>
             <p>Vangelis Drakoulis©</p>
         </footer>
