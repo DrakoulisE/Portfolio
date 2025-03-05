@@ -7,20 +7,27 @@
         <title>Portofolio v3</title>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <link rel="stylesheet" href="./assets/styles/style_basic.css">
+        <link rel="stylesheet" href="./assets/styles/style_general.css">
         <link rel="stylesheet" href="./assets/styles/index/style_banner.css">
         <link rel="stylesheet" href="./assets/styles/index/style_page_content.css">
     </head>
 
     <body>
         <header>
-            <nav id="navBar">
+            <nav>
                 <button>About</button>
                 <button>Projects</button>
                 <button>Contact</button>
             </nav>
-            <button id="homeButton"><ion-icon name="home"></ion-icon></button>
-            <button id="barMenu"><ion-icon name="menu"></ion-icon></button>
+            <button id="homeButton">
+                <ion-icon name="home"></ion-icon>
+            </button>
+            <div class="mobileNavButton">
+                <button>
+                    <ion-icon class="hidden" name="menu"></ion-icon>
+                    <ion-icon class="" name="close"></ion-icon>
+                </button>
+            </div>    
         </header>
         
         <div id="bannerBox">
