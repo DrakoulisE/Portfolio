@@ -1,6 +1,5 @@
 
 html{
-    width: 100vw;
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
@@ -8,7 +7,6 @@ html{
 }
 
 body{
-    width: 100vw;
     margin: 0px;
     background-image: url(../images/bodyBackground.jpg);
     background-repeat: no-repeat;
@@ -60,6 +58,21 @@ nav button:active{
     justify-self: end;
     align-self: center;
     margin-right: 10%;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    width: 50px;
+    height: 40px;
+}
+#homeButton:hover{
+    cursor: pointer;
+    color: rgb(55, 180, 255);
+    font-size: 1.7em;
+}
+#homeButton:active{
+    color: rgb(71, 71, 71);
+    transition: 0.2s;
 }
 
 #barMenu{
@@ -79,6 +92,10 @@ footer p{
 
 @media (max-width: 767px){
 
+    html body{
+        width: 100vw;
+    }
+
     header{
         display: flex;
         justify-content: end;
@@ -93,7 +110,23 @@ footer p{
 
     #barMenu{
         display: block;
-        margin-right: 10%;
+        margin-right: 5%;
+        width: 50px;
+        height: 40px;
+        font-size: 2em;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+    #barMenu:hover{
+        height: 50px;
+        cursor: pointer;
+        color: rgb(55, 180, 255);
+        font-size: 2.2em;
+    }
+    #barMenu:active{
+        color: rgb(71, 71, 71);
+        transition: 0.1s;
     }
 
 }

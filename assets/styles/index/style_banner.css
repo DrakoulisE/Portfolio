@@ -89,7 +89,7 @@
     width: 700px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1200px){
     #bannerBox{
         flex-direction: column;
     }
