@@ -1,0 +1,148 @@
+
+html{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    color: rgb(250, 250, 250);
+}
+
+body{
+    margin: 0px;
+    background-image: url(../images/bodyBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+}
+
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+    grid-column: 2;
+}
+nav button{
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(250, 250, 250);
+}
+nav button:hover{
+    cursor: pointer;
+    color: rgb(55, 180, 255);
+    font-size: 1.5em;
+    transition: 0.2s;
+}
+nav button:active{
+    color: rgb(71, 71, 71);
+    font-size: 1.5em;
+    transition: 0s;
+}
+
+#homeButton{
+    justify-self: end;
+    align-self: center;
+    margin-right: 10%;
+    background-color: transparent;
+    color: rgb(250, 250, 250);
+    font-size: 1.5em;
+    border: none;
+    width: 50px;
+    height: 40px;
+}
+#homeButton:hover{
+    cursor: pointer;
+    color: rgb(55, 180, 255);
+    font-size: 1.7em;
+}
+#homeButton:active{
+    color: rgb(71, 71, 71);
+    transition: 0.2s;
+}
+
+.mobileNavButton{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: rgb(89, 89, 89);
+}
+footer p{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.hidden{
+    display : none;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media (max-width: 767px){
+
+    html body{
+        width: 100vw;
+    }
+
+    header{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    nav{
+        position: absolute;
+        width: 100%;
+        height: 100dvh;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        gap: 40px;
+    }
+    #homeButton{
+        display: none;
+    }
+
+    .mobileNavButton{
+        display: block;
+        z-index: 6;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileNavButton button{
+        background-color: transparent;
+        border: none;
+        color: rgb(250, 250, 250);
+        font-size: 2rem;
+    }
+    .mobileNavButton button:hover{
+        cursor: pointer;
+        color: rgb(55, 180, 255);
+        font-size: 2.2rem;
+    }
+}

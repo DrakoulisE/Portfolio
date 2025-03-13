@@ -83,7 +83,6 @@
     display: flex;
     justify-content:end;
     align-items: center;
-    overflow: hidden;
 }
 #logo > img{
     width: 700px;
@@ -109,6 +108,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
     #logo > img{
         width: 650px;

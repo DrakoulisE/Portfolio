@@ -4,23 +4,30 @@
     <head>
         <meta charset="UTF-8">  
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portofolio v3</title>
+        <title>Portofolio</title>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <link rel="stylesheet" href="./assets/styles/style_basic.css">
+        <link rel="stylesheet" href="./assets/styles/style_general.css">
         <link rel="stylesheet" href="./assets/styles/index/style_banner.css">
         <link rel="stylesheet" href="./assets/styles/index/style_page_content.css">
     </head>
 
     <body>
         <header>
-            <nav id="navBar">
-                <button>About</button>
-                <button>Projects</button>
-                <button>Contact</button>
+            <nav>
+                <button id="header_about">About</button>
+                <button id="header_projects">Projects</button>
+                <button id="header_contact">Contact</button>
             </nav>
-            <button id="homeButton"><ion-icon name="home"></ion-icon></button>
-            <button id="barMenu"><ion-icon name="menu"></ion-icon></button>
+            <button id="homeButton">
+                <ion-icon name="home-sharp"></ion-icon>
+            </button>
+            <div class="mobileNavButton">
+                <button id="">
+                    <ion-icon class="hidden" name="menu"></ion-icon>
+                    <ion-icon class="" name="close"></ion-icon>
+                </button>
+            </div>    
         </header>
         
         <div id="bannerBox">
@@ -40,6 +47,7 @@
         </div>
 
         <div class="about container">
+            <p id="about_target"></p>
             <h2>About</h2>
             <div class="aboutContentBox">
                 <div id="aboutImage">
@@ -56,40 +64,14 @@
         </div>
         
         <div class="project container">
+            <p id="projects_target"></p>
             <h2>Projects</h2>
             <ul>
                 <li>
-                    <button>
+                    <button onclick="window.open('https://drakoulise.github.io/gyrogyro/', '_blank')">
                         <div>
-
-                        </div>
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <div>
-
-                        </div>
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <div>
-
-                        </div>
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <div>
-                            
-                        </div>
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <div>
-                            MORE
+                            <img src="./assets/images/project_gyrogyro_preview.png" alt="gyrogyro_prewview">
+                            <p>Fast food website</p>
                         </div>
                     </button>
                 </li>
@@ -100,6 +82,8 @@
             <p>Vangelis Drakoulis©</p>
         </footer>
   
+        <script src="./assets/script/script.js"></script>
+
     </body>
 
 </html>
