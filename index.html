@@ -5,8 +5,6 @@
         <meta charset="UTF-8">  
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portofolio</title>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <link rel="stylesheet" href="./assets/styles/style_general.css">
         <link rel="stylesheet" href="./assets/styles/index/style_banner.css">
         <link rel="stylesheet" href="./assets/styles/index/style_page_content.css">
@@ -20,14 +18,13 @@
                 <button id="header_contact">Contact</button>
             </nav>
             <button id="homeButton">
-                <ion-icon name="home-sharp"></ion-icon>
+                <img class="svg" id="home_svg" src="./assets/images/svg/home.svg">
             </button>
-            <div class="mobileNavButton">
-                <button id="">
-                    <ion-icon class="hidden" name="menu"></ion-icon>
-                    <ion-icon class="" name="close"></ion-icon>
-                </button>
-            </div>    
+            <button class="mobile_nav_button hidden">
+                <img id="bar_menu_open" src="./assets/images/bar-menu.svg">
+                <img id="bar_menu_close" src="./assets/images/close.svg">
+            </button>
+ 
         </header>
         
         <div id="bannerBox">
@@ -37,8 +34,14 @@
                     <h2>junior.<b>Developer</b></h2>
                 </div>
                 <div id="buttons">
-                    <button>GitHub </button>
-                    <button>LinkedIn</button>
+                    <button id="github">
+                        <img class="button_logo" id="github_logo" src="./assets/images/svg/github_logo.svg">
+                        GitHub
+                    </button>
+                    <button id="linkedin">
+                        <img class="button_logo" id="linkedin_logo" src="./assets/images/svg/linkedin_logo.svg">
+                        LinkedIn
+                    </button>
                 </div>
             </div>
             <div id="logo">
@@ -50,9 +53,6 @@
             <p id="about_target"></p>
             <h2>About</h2>
             <div class="aboutContentBox">
-                <div id="aboutImage">
-
-                </div>
                 <div id = "about_textbox">
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora optio debitis impedit sunt doloremque quidem, voluptatem soluta ex. Doloribus, vel! Repellat modi, ipsam magnam autem soluta vel excepturi aspernatur?</p>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora optio debitis impedit sunt doloremque quidem, voluptatem soluta ex. Doloribus, vel! Repellat modi, ipsam magnam autem soluta vel excepturi aspernatur?</p>
@@ -68,16 +68,38 @@
             <h2>Projects</h2>
             <ul>
                 <li>
-                    <button onclick="window.open('https://drakoulise.github.io/gyrogyro/', '_blank')">
+                    <button id="project_gyrogyro">
                         <div>
                             <img src="./assets/images/project_gyrogyro_preview.png" alt="gyrogyro_prewview">
-                            <p>Fast food website</p>
+                            <p>Fast food store website<br>(in progress)</p>
                         </div>
                     </button>
                 </li>
             </ul>
         </div>
-            
+        
+        <div class="contact container">
+            <p id="contact_target"></p>
+            <h2>Contact</h2>
+            <div class="email_form_container">
+                <form
+                action="https://formspree.io/f/mvgkqyzz"
+                method="POST"
+                >
+                <label>
+                Email:<br>
+                <input type="email" name="email" required>
+                </label>
+                <label>
+                Message:<br>
+                <textarea name="message" required></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
         <footer>
             <p>Vangelis Drakoulis©</p>
         </footer>
