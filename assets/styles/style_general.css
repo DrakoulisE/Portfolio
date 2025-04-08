@@ -103,11 +103,6 @@ footer p{
 }
 
 @media (max-width: 767px){
-
-    html body{
-        width: 100vw;
-    }
-
     header{
         display: flex;
         justify-content: end;
