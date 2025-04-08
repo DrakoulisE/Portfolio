@@ -154,4 +154,10 @@
         margin-top: 20px;
     }
 
+    .email_form_container input , textarea{
+        width: 90vw;
+    }
+    .email_form_container button{
+        width: 50vw;
+    }
 }
