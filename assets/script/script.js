@@ -91,3 +91,33 @@ window.onload = mobileView();
 window.addEventListener("resize", () => {
     mobileView();
 })
+
+if(window.innerWidth <= 767){
+    let menu = document.querySelector(".mobile_nav_button");
+    let closeIcon = document.querySelector("#bar_menu_close");
+    let openIcon = document.querySelector("#bar_menu_open");
+    let nav = document.querySelector("nav");
+
+    nav.classList.add("nav_menu_mobile");
+    nav.classList.add("hidden");
+    menu.classList.remove("hidden");
+
+    menu.addEventListener("click", () => {
+        if(closeIcon.classList.contains("hidden")){
+            closeIcon.classList.remove("hidden");
+            openIcon.classList.add("hidden");
+            nav.classList.remove("hidden");
+        }
+        else{
+            closeIcon.classList.add("hidden");
+            openIcon.classList.remove("hidden");
+            nav.classList.add("hidden");
+        }
+    })
+
+}
+else{
+    document.querySelector(".mobile_nav_button").classList.add("hidden");
+    document.querySelector("nav").classList.remove("nav_menu_mobile");
+    document.querySelector("nav").classList.remove("hidden");
+}
