@@ -116,7 +116,7 @@ footer p{
     .mobile_nav_button {
         background-color: transparent;
         border: 0;
-        width: 45px;
+        width: 100px;
         height: 80%;
         cursor: pointer;
         margin-right: 20px;
@@ -125,8 +125,12 @@ footer p{
         width: 100%;
         filter: invert(100%);
     }
-    #bar_menu_close{
+    #bar_menu_close, #bar_menu_open{
         width: 80%;
+        height: 50%;
+    }
+    #bar_menu_open{
+        height: 70% !important;
     }
 
     .nav_menu_mobile{
