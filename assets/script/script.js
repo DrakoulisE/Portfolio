@@ -51,11 +51,11 @@ github_Banner_Button.addEventListener("click", ()=>{
 const project_gyrogyro_button = document.getElementById("project_gyrogyro");
 
 project_gyrogyro_button.addEventListener("click", ()=>{
-    window.open('https://drakoulise.github.io/gyrogyro/', '_blank');
+    window.open('https://drakoulise.github.io/sudoku', '_blank');
 })
 
 function mobileView(){
-    if(window.innerWidth <= 767){
+    if(window.innerWidth <= 1200){
         let menu = document.querySelector(".mobile_nav_button");
         let closeIcon = document.querySelector("#bar_menu_close");
         let openIcon = document.querySelector("#bar_menu_open");

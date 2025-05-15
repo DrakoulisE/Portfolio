@@ -102,7 +102,7 @@ footer p{
     display : none !important;     
 }
 
-@media (max-width: 767px){
+@media (max-width: 1200px){
     header{
         display: flex;
         justify-content: end;
